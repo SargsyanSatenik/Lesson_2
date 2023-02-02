@@ -1,4 +1,23 @@
 # Methods
 
-https://www.youtube.com/watch?v=hHbWF1Bvgf4
-![image](https://user-images.githubusercontent.com/124253902/216321291-8642606d-9f82-48f6-8914-fe119fcbdf9f.png)
+https://learn.microsoft.com/en-us/cpp/c-language/recursive-functions?view=msvc-170
+
+```int factorial( int num );      /* Function prototype */
+
+int main()
+{
+    int result, number;
+    .
+    .
+    .
+    result = factorial( number );
+}
+
+int factorial( int num )      /* Function definition */
+{
+    .
+    .
+    .
+    if ( ( num > 0 ) || ( num <= 10 ) )
+        return( num * factorial( num - 1 ) );
+}```
